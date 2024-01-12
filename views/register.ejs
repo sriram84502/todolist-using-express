@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+    <nav class="navbar p-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">TodoList</a>
+          <form class="d-flex">
+            <a class="nav-link" href="/login">Login</a>
+          </form>
+        </div>
+      </nav>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="fs-3 fw-bold font-monospace mb-1">Create account</div>
+                <div class="fs-6 fw-semibold font-monospace mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam deleniti vel temporibus facere aliquam dolorum!</div>
+                <form action="/add-user" method="post">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="name" id="floatingInput" placeholder="Enter your name">
+                        <label for="floatingInput">Enter your name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" name="email" id="floatingInput" placeholder="Enter your email">
+                        <label for="floatingInput">Enter your email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary px-3 py-2 mb-3">Signup Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
