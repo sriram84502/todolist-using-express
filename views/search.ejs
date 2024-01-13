@@ -43,41 +43,12 @@
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-5">
-                <div class="fs-4 fw-bold font-monospace mb-1">Manage all your taks at one place <span class="text-muted">@<%= users.name %></span></div>
-                <div class="fs-6 fw-semibold font-monospace mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam deleniti vel temporibus facere aliquam dolorum!</div>
-                <form action="/add-task" method="post">
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" name="task" id="floatingInput" placeholder="Enter a task">
-                        <label for="floatingInput">Enter a task</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="date" name="date" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Date</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary px-3 py-2 mb-3">Add Task</button>
-                </form>
+                <input class="form-control mb-3 p-3" type="search" placeholder="Search" aria-label="Search">
                 <ol class="list-group list-group-numbered">
-                    <% for(let i=0;i<todos.length;i++){ %>
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                      <div class="ms-2 me-auto">
-                        <div class="fw-bold"><%= todos[i].title %></div>
-                        <% let date = new Date(todos[i].date) %>
-                        <%= date.toLocaleDateString("en-US",{
-                          weekday: "long",
-                          year: "numeric",
-                          month: "long",
-                          day: "numeric",
-                        }) %>
-                      </div>
-                      <form action="/delete-task" method="post">
-                        <input type="hidden" name="task" value="<%= todos[i].title%>">
-                        <input type="hidden" name="date" value="<%= todos[i].date%>">
-                        <button class="btn p-0 m-0"><i class="bi bi-trash3"></i></button>
-                      </form>
-                    </li>
-                    <%}%>
+                    <li class="list-group-item">A list item</li>
+                    <li class="list-group-item">A list item</li>
+                    <li class="list-group-item">A list item</li>
                 </ol>
-                
             </div>
         </div>
     </div>
